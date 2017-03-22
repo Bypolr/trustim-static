@@ -13,10 +13,10 @@ function view(state$?: Stream<VNode>): Stream<VNode> {
         </a>
       </div>
       <ul className='menus column'>
-        <li className='menu selected'>
+        <li className='menu'>
           <span className='menu-icon iconfont'>&#xe607;</span>
         </li>
-        <li className='menu'>
+        <li className='menu selected'>
           <span className='menu-icon iconfont'>&#xe787;</span>
         </li>
       </ul>

@@ -19,11 +19,16 @@ export function App(sources : Sources) : Sinks
     .map(([mb, cb]) => {
       return div('.container.flex', [
         mb,
-        div('.right-wrap.column.flex',
+        /* right */
+        div('.right-wrap.column.flex',[
+          /* menubar expand area */
+          div('.menubar-expand'),
+
           div('.right-inner.flex.column', [
             div('.column.messages-wrap.flex'),
             div('.chatbox-wrap', cb),
-        ])),
+          ])
+        ]),
       ]);
     });
 

@@ -31,9 +31,15 @@
       cursor: pointer;
       color: $clr-purple-light;
       transition: transform .3s ease;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
 
       &:hover {
         transform: scale(1.3);
+      }
+      &:active {
+        transform: scale(1);
       }
     }
 

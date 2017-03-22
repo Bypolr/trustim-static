@@ -1,0 +1,39 @@
+
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1490153281654'); /* IE9*/
+  src: url('iconfont.eot?t=1490153281654#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('iconfont.woff?t=1490153281654') format('woff'), /* chrome, firefox */
+  url('iconfont.ttf?t=1490153281654') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('iconfont.svg?t=1490153281654#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-home:before { content: "\e607"; }
+
+.icon-add:before { content: "\e7c4"; }
+
+.icon-emoji:before { content: "\e641"; }
+
+.icon-attach:before { content: "\e671"; }
+
+.icon-setting:before { content: "\e612"; }
+
+.icon-setting1:before { content: "\e62d"; }
+
+.icon-people:before { content: "\e787"; }
+
+.icon-people1:before { content: "\e70f"; }
+
+.icon-quit:before { content: "\e61d"; }
+
+.icon-send:before { content: "\e8a6"; }
+
+.icon-alert:before { content: "\e62c"; }
+

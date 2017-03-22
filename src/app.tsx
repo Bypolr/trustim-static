@@ -1,13 +1,21 @@
 import xs, { Stream } from 'xstream';
-import { VNode } from '@cycle/dom';
-
+import { VNode, div, h2 } from '@cycle/dom';
 import { Sources, Sinks } from './interfaces';
+
+import Menubar from './Menubar';
 
 export function App(sources : Sources) : Sinks
 {
-    const vdom$ : Stream<VNode> = xs.of(
-        <div>My Awesome Cycle.js app</div>
-    );
+  const menubar: Sinks = Menubar();
+  const vdom$: Stream<VNode> = menubar.DOM
+    .map((mb) => {
+      return div([
+        mb,
+        div([
+          h2('Hello World'),
+        ])
+      ]);
+    });
 
     return {
         DOM: vdom$

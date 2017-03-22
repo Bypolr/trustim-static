@@ -1,0 +1,6 @@
+[*]
+charset = utf-8
+
+[*.{js,md,json,ts,tsx,scss}]
+indent_size = 2
+indent_style = space

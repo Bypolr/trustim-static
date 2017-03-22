@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 
 html, body, div, p, span, ul, ol,
 li, pre, code {
@@ -21,12 +24,28 @@ body {
   right: 0;
   bottom: 0;
   text-rendering: optimizeLegibility;
+  background-color: #F6F6FC;
 }
 
 .right-wrap {
-  background-color: #F6F6FC;
+  height: 100%;
 
   .right-inner {
-    padding: 30px;
+    position: relative;
+    margin: 30px;
+    flex-direction: column;
+  }
+
+  .chatbox-wrap {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: #F6F6FC;
+  }
+
+  .messages-wrap {
+    min-height: 100px;
   }
 }

@@ -1,12 +1,44 @@
 
 .chatbox {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+
+  .inner {
+    border: 2px solid darken(#F6F6FC, 5%);
+    padding: 12px 10px;
+  }
+
   .input {
     resize: none;
-    padding: 5px;
     line-height: 1.5;
     border: none;
     background-color: #F6F6FC;
     outline: 0;
     font-size: 14px;
+    color: $clr-black-light;
+    width: 100%;
+  }
+
+  .chatbox-tool {
+    flex-grow: 0;
+    align-items: center;
+
+    .tool {
+      display: inline-block;
+      width: 45px;
+      text-align: center;
+      cursor: pointer;
+      color: $clr-purple-light;
+      transition: transform .3s ease;
+
+      &:hover {
+        transform: scale(1.3);
+      }
+    }
+
+    .tool-send {
+      color: $clr-purple;
+    }
   }
 }

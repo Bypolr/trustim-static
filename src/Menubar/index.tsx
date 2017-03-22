@@ -1,12 +1,19 @@
+// menubar component
+
 import xs, { Stream } from 'xstream';
 import { VNode } from '@cycle/dom';
 import { Sources, Sinks } from '../interfaces';
 
 function view(state$?: Stream<VNode>): Stream<VNode> {
   return xs.of(
-    <nav className='menubar'>
-      <ul className='menus'>
-        <li className='menu'>
+    <nav className='menubar flex'>
+      <div className="column user-icon-wrap flex">
+        <a href="#" className="user-icon-link">
+          <div className="user-icon"></div>
+        </a>
+      </div>
+      <ul className='menus column'>
+        <li className='menu selected'>
           <span className='menu-icon iconfont'>&#xe607;</span>
         </li>
         <li className='menu'>

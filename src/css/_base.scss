@@ -1,0 +1,32 @@
+
+html, body, div, p, span, ul, ol,
+li, pre, code {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  color: $clr-black;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-rendering: optimizeLegibility;
+}
+
+.right-wrap {
+  background-color: #F6F6FC;
+
+  .right-inner {
+    padding: 30px;
+  }
+}

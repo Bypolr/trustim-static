@@ -1,0 +1,21 @@
+
+.flex {
+	display: flex;
+	position: relative;
+	@include clearfix();
+
+	&.vertical-center {
+		align-items: center;
+	}
+}
+
+.column {
+	flex: 1;
+	position: relative;
+}
+
+.column-pack {
+	flex: 1;
+	flex-grow: 0;
+	flex-basis: initial;
+}

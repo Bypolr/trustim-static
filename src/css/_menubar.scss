@@ -1,0 +1,51 @@
+
+.menubar {
+  position: relative;
+  width: $menubar-width;
+  flex-grow: 0;
+  flex-direction: column;
+
+  .menus {
+    text-align: center;
+    flex-grow: 2;
+  }
+
+  .menu {
+    margin-bottom: 25px;
+    cursor: pointer;
+  }
+
+  .user-icon-wrap {
+    flex-grow: 1;
+    align-items: center;
+    text-align: center;
+  }
+
+  .user-icon-link {
+    margin-left: 15px;
+  }
+
+  .user-icon {
+    width: $avatar-size;
+    height: $avatar-size;
+    border-radius: 50%;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #E8E8E8;
+  }
+}
+
+.menu > .menu-icon {
+  color: $clr-purple-light;
+  font-size: $menu-size;
+  transition: color .3s ease;
+}
+
+.menu:hover > .menu-icon {
+  color: $clr-purple;
+}
+
+.selected .menu-icon {
+  color: $clr-purple;
+}

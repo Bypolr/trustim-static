@@ -1,0 +1,17 @@
+
+$clr-light-gap: 15%;
+
+//
+// colors
+// =======================
+$clr-black: #343434;
+$clr-black-light: lighten($clr-black, $clr-light-gap);
+$clr-purple: #746AF4;
+$clr-purple-light: lighten($clr-purple, $clr-light-gap);
+
+//
+// Menubar
+// =======================
+$menu-size: 24px;
+$menubar-width: 78px;
+$avatar-size: 45px;

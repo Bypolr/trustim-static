@@ -7,7 +7,9 @@ import { Sources, Sinks } from '../interfaces';
 function view(state$?: Stream<VNode>): Stream<VNode> {
   return xs.of(
     <div className="menubar-expand expand-contact">
-
+      <div style="display: none;">search</div>
+      <div className="contact-list">
+      </div>
     </div>
   );
 }

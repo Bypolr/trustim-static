@@ -7,7 +7,7 @@ import Chatbox from './Chatbox';
 
 export function App(sources : Sources) : Sinks
 {
-  const menubar: Sinks = Menubar();
+  const menubar: Sinks = Menubar(sources);
   const chatbox: Sinks = Chatbox();
 
   const components: Stream<VNode>[] = [

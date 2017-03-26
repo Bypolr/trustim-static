@@ -1,6 +1,7 @@
 import 'babel-polyfill'; //This will be replaced based on your babel-env config
 
 import { run } from '@cycle/run';
+import xs from 'xstream';
 import { makeDOMDriver } from '@cycle/dom';
 import { makeHTTPDriver } from '@cycle/http';
 
@@ -15,3 +16,11 @@ const drivers : any = {
 };
 
 run(main, drivers);
+
+declare global {
+  interface Window {
+    xs: any
+  }
+}
+
+window.xs = xs;
